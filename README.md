@@ -252,3 +252,82 @@ TourMetrics demonstrates the complete data science lifecycle:
 > **Question → Data → Insight → Prediction → Deployment**
 
 By combining analytics, machine learning, and web integration, the system provides a structured decision-support tool for tourism strategy and planning.
+
+---
+
+## 🎓 Learning Milestone: Reading & Interpreting a Sample Data Science Project Repository
+
+When you first open a data science repository, it can feel overwhelming. This milestone builds the skill of reading a project with intention—understanding how the work is organized, why decisions were made, and how components connect.
+
+### 1) A Repository Is a Story, Not Just Files
+
+Learn to go beyond file browsing and ask:
+
+- What problem is this project solving?
+- How does structure reflect the data science lifecycle?
+- What work is complete, and what assumptions were made?
+
+### 2) Understanding the Role of the README
+
+The README is the project’s entry point and collaboration guide.
+
+A strong README should communicate:
+
+- Problem or guiding question
+- Dataset(s) and source
+- Workflow and approach
+- Key results/insights
+- How to run/explore the project
+
+In this milestone, you practice identifying:
+
+- Documentation quality and missing context
+- Gaps between documented workflow and repository structure
+- What is clear vs. what remains ambiguous
+
+### 3) Interpreting Folder Structure and File Organization
+
+Repository names vary, but lifecycle intent is often visible through folders (for example, `data/`, `notebooks/`, `src/`, `models/`, `reports/`, `figures/`).
+
+Focus on:
+
+- Mapping folders to lifecycle stages
+- Separating exploratory work from finalized outputs
+- Recognizing safe places to modify vs. areas that should remain stable
+
+### 4) Reading Notebooks and Code with Purpose
+
+You do not need to understand every line immediately. Prioritize flow:
+
+- What is each notebook/script trying to do?
+- Where is data loaded, cleaned, transformed?
+- Which sections are exploratory vs. final analysis?
+- How does reasoning progress from data to insight?
+
+### 5) Identifying Assumptions, Limitations, and Open Questions
+
+Read critically by checking:
+
+- Assumptions about data quality, representativeness, or completeness
+- Signs of missing values, bias, or sampling limitations
+- Unanswered questions and opportunities for deeper analysis
+
+### 6) How This Prepares You to Contribute
+
+By mastering repository interpretation, you can:
+
+- Contribute without breaking workflows
+- Extend existing analysis instead of duplicating effort
+- Improve documentation where needed
+- Ask stronger review and design questions
+
+### ✅ Milestone Outcomes
+
+By the end of this milestone, you should be able to:
+
+- Explain what a data science repository is trying to achieve
+- Navigate confidently using README + project structure
+- Understand how analysis, data, and insights are organized
+- Identify gaps, assumptions, and improvement opportunities
+
+This is a foundational skill for real-world data science collaboration, where reading and interpreting existing work is as important as writing new code.
