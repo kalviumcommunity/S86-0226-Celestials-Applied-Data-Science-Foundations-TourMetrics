@@ -286,19 +286,19 @@ Python 3.14.3
 ### 📝 Setup Steps Followed
 
 1. **Python Installation:**
-   - Downloaded Python 3.14.3 installer from python.org
-   - Ran installer with "Add to PATH" option enabled
-   - Verified installation using `python --version`
+     - Downloaded Python 3.14.3 installer from python.org
+     - Ran installer with "Add to PATH" option enabled
+     - Verified installation using `python --version`
 
 2. **Anaconda Installation:**
-   - Downloaded Anaconda installer for Windows
-   - Completed installation with default settings
-   - Verified conda accessibility from command prompt
+     - Downloaded Anaconda installer for Windows
+     - Completed installation with default settings
+     - Verified conda accessibility from command prompt
 
 3. **Environment Configuration:**
-   - Confirmed Python and Conda are in system PATH
-   - Tested basic Python commands in terminal
-   - Verified environment is ready for package installations
+     - Confirmed Python and Conda are in system PATH
+     - Tested basic Python commands in terminal
+     - Verified environment is ready for package installations
 
 ### 🎯 Environment Readiness
 
@@ -319,6 +319,91 @@ Terminal verification showing:
 - Windows OS version: 10.0.26200.7840
 - Python 3.14.3 successfully installed
 - Python accessible via command line
+
+---
+
+## ✅ Milestone Verification: Python + Conda + Jupyter
+
+This milestone verifies that the local Data Science environment is functional and ready for sprint work.
+
+### 📋 Verified System Details
+
+- **Operating System:** Windows 10 (Version 10.0.26200.7840)
+- **Python Version:** 3.14.3
+- **Conda Version:** *(add your terminal output here, e.g., 25.7.0)*
+- **Environment Used:** `base` *(or replace with your named env)*
+- **Jupyter Status:** Launches successfully and executes notebook cells
+
+### 1) 🐍 Python Verification
+
+```cmd
+C:\Users\penum>python --version
+Python 3.14.3
+
+C:\Users\penum>python
+Python 3.14.3 (...)
+>>> print("Python REPL check OK")
+Python REPL check OK
+>>> x = 5
+>>> y = 7
+>>> print(x + y)
+12
+>>> exit()
+```
+
+✅ Python is callable, launches correctly, and runs REPL commands without errors.
+
+### 2) 📦 Conda Environment Verification
+
+```cmd
+C:\Users\penum>conda --version
+conda <your-version>
+
+C:\Users\penum>conda env list
+# conda environments:
+#
+base   *   C:\Users\penum\anaconda3
+
+C:\Users\penum>conda activate base
+(base) C:\Users\penum>
+```
+
+✅ Conda is installed, environments are listed, and environment activation works.
+
+### 3) 📓 Jupyter Verification
+
+```cmd
+(base) C:\Users\penum>jupyter notebook
+# or
+(base) C:\Users\penum>jupyter lab
+```
+
+Verification performed:
+
+- Browser opened without launch errors
+- Notebook created/opened successfully
+- A Python cell executed successfully:
+
+```python
+print("Jupyter kernel check OK")
+```
+
+Output:
+
+```text
+Jupyter kernel check OK
+```
+
+✅ Jupyter is functional and connected to the active Conda environment.
+
+### 📌 Milestone Outcome
+
+- ✅ Python installation is stable
+- ✅ Conda environment workflow is functional
+- ✅ Jupyter runs and executes Python code
+- ✅ Local machine is verified and ready for the Data Science sprint
+
+> **PR Note:** Include terminal screenshots/snippets for `python --version`, `conda --version`, `conda env list`, environment activation prompt, and Jupyter cell output as proof.
 
 ---
 
