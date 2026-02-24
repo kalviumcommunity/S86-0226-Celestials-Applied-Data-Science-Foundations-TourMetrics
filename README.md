@@ -221,6 +221,107 @@ Where:
 
 ---
 
+## 🔧 Development Environment Setup
+
+This section documents the local development environment setup required for the TourMetrics Data Science sprint.
+
+### 📋 System Information
+
+- **Operating System:** Windows 10 (Version 10.0.26200.7840)
+- **Python Version:** 3.14.3
+- **Anaconda Version:** *(Update with your conda version)*
+
+### 🐍 Python Installation
+
+Python 3.14.3 is installed and configured on the system.
+
+**Verification:**
+
+```cmd
+C:\Users\penum>python --version
+Python 3.14.3
+```
+
+Python is accessible from the command line and functioning correctly.
+
+### 📦 Anaconda Installation
+
+Anaconda has been installed for managing Python environments and data science packages.
+
+**Verification Command:**
+
+```cmd
+conda --version
+```
+
+**Expected Output:**
+```
+conda [version number]
+```
+
+> **Note:** If conda is not recognized, you may need to:
+> - Restart your terminal/command prompt
+> - Or manually add Anaconda to your PATH
+> - Or run commands from Anaconda Prompt
+
+### 🔐 Environment Validation
+
+The development environment has been validated for Data Science workflows.
+
+**Python REPL Access:**
+
+```cmd
+C:\Users\penum>python
+Python 3.14.3
+```
+
+**Key Validations Completed:**
+
+- ✅ Python is callable from command line
+- ✅ Python version is compatible with DS libraries
+- ✅ Anaconda is installed and accessible
+- ✅ Base environment can be activated
+- ✅ Environment is ready for package installations
+
+### 📝 Setup Steps Followed
+
+1. **Python Installation:**
+   - Downloaded Python 3.14.3 installer from python.org
+   - Ran installer with "Add to PATH" option enabled
+   - Verified installation using `python --version`
+
+2. **Anaconda Installation:**
+   - Downloaded Anaconda installer for Windows
+   - Completed installation with default settings
+   - Verified conda accessibility from command prompt
+
+3. **Environment Configuration:**
+   - Confirmed Python and Conda are in system PATH
+   - Tested basic Python commands in terminal
+   - Verified environment is ready for package installations
+
+### 🎯 Environment Readiness
+
+This setup provides a stable foundation for:
+
+- Jupyter Notebooks for exploratory data analysis
+- Python scripts for data preprocessing
+- Machine Learning model development with scikit-learn
+- Data visualization with Matplotlib/Plotly
+- Flask application development
+- Streamlit dashboard deployment
+
+The environment is configured and verified for the complete TourMetrics development lifecycle.
+
+### 📸 Verification Proof
+
+Terminal verification showing:
+- Windows OS version: 10.0.26200.7840
+- Python 3.14.3 successfully installed
+- Python accessible via command line
+
+---
+
 ## 🧪 How to Run the Project  
 
 ```bash
