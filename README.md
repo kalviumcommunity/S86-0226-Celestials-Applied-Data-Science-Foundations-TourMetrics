@@ -517,3 +517,105 @@ By the end of this milestone, you should be able to:
 - Identify gaps, assumptions, and improvement opportunities
 
 This is a foundational skill for real-world data science collaboration, where reading and interpreting existing work is as important as writing new code.
+
+---
+
+## 🎓 Learning Milestone: Launching Jupyter Notebook and Understanding the Home Interface
+
+This milestone is a **navigation and familiarity task**, not an analysis task.
+
+By completing this milestone, you will be able to:
+
+- Launch Jupyter Notebook from the terminal
+- Identify key sections of the Jupyter Home interface
+- Navigate directories safely and intentionally
+- Create and open a notebook in the correct project folder
+- Perform basic notebook file management actions
+
+### Why This Matters
+
+Many early data science issues happen because of:
+
+- Running notebooks from the wrong directory
+- Creating files in unintended locations
+- Losing track of datasets or notebooks
+- Confusion about the active environment or kernel
+
+This milestone ensures your notebooks, data, and scripts remain organized from the start.
+
+### 1) Launching Jupyter Notebook
+
+Launch Jupyter Notebook from terminal/command prompt.
+
+You should:
+
+- Ensure the correct Conda environment is active
+- Launch Jupyter with terminal command
+- Confirm Jupyter opens in browser without errors
+- Note that launch directory becomes Jupyter Home root
+
+Example commands:
+
+```cmd
+conda activate <your_env_name>
+cd C:\Users\SUPRIYA\OneDrive\Desktop\celestials\S86-0226-Celestials-Applied-Data-Science-Foundations-TourMetrics
+jupyter notebook
+```
+
+### 2) Understanding the Jupyter Home Interface
+
+Once opened, identify:
+
+- File and folder listing area
+- Navigation breadcrumbs/path
+- Buttons for creating new files/notebooks
+- Visual indicators for folders, notebooks, and scripts
+
+Goal: understand the layout before deeper work begins.
+
+### 3) Navigating Project Folders
+
+Practice folder navigation intentionally.
+
+You should:
+
+- Move into and out of directories
+- Locate your project folder correctly
+- Map Jupyter folder navigation to local file system paths
+
+### 4) Creating and Opening a Notebook
+
+Create a notebook in the correct project location.
+
+You should:
+
+- Create a new notebook in the intended folder
+- Open the notebook
+- Verify expected Python kernel is selected
+- Run one simple cell to verify execution
+
+Simple execution check:
+
+```python
+print("Notebook launch check successful")
+```
+
+### 5) Notebook File Management Basics
+
+Practice these basic actions:
+
+- Rename a notebook
+- Save changes
+- Close the notebook safely
+- Reopen it from Jupyter Home
+
+This ensures safe notebook handling and avoids accidental file loss/confusion.
+
+### ✅ Milestone Completion Checklist
+
+- [ ] Jupyter launched from terminal in the correct project directory
+- [ ] Home interface sections identified clearly
+- [ ] Folder navigation tested (into/out of directories)
+- [ ] Notebook created and opened in the correct folder
+- [ ] Python kernel verified and simple cell executed
+- [ ] Notebook renamed, saved, closed, and reopened successfully
