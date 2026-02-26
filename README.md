@@ -101,22 +101,53 @@ The project follows industry-standard Data Science organization:
 
 ```
 TourMetrics/
-├── data/                    # All datasets
-│   ├── raw/                # Original, unmodified data
-│   └── processed/          # Cleaned and transformed data
-├── notebooks/              # Jupyter notebooks for analysis
-├── src/                    # Reusable Python scripts
-├── models/                 # Trained ML models
-├── outputs/                # Generated visualizations and results
-├── reports/                # Final reports and presentations
-└── myenv/                  # Python virtual environment
+├── data/                     # Input datasets (staged)
+│   ├── raw/                  # Original, unmodified source files
+│   └── processed/            # Cleaned/transformed datasets
+├── notebooks/                # Jupyter notebooks for analysis
+├── outputs/                  # Derived project artifacts
+│   ├── figures/              # Charts and visual outputs
+│   ├── reports/              # Exported summaries/documents
+│   └── models/               # Trained model artifacts
+├── TourMetrics.ipynb         # Main project notebook
+└── README.md                 # Project and workflow documentation
 ```
 
 **Key Principles:**
 - Raw data stays untouched in `data/raw/`
 - Processed data goes to `data/processed/`
-- Notebooks for exploration, scripts for production
-- Models and outputs are organized separately
+- Outputs (figures/reports/models) stay in `outputs/`
+- Data flow is one-directional: raw → processed → outputs
+
+---
+
+## ✅ Milestone: Organizing Raw, Processed, and Output Data
+
+This repository now enforces clear data-stage separation to support reproducibility and auditability.
+
+### Data Stage Rules
+
+1. **Raw data (`data/raw/`)**
+     - Store source files exactly as received.
+     - Never edit raw files directly.
+     - Treat this folder as read-only evidence.
+
+2. **Processed data (`data/processed/`)**
+     - Save cleaned/transformed datasets only.
+     - Use stage-specific, descriptive filenames.
+     - Ensure processed files can be recreated from raw inputs.
+
+3. **Output artifacts (`outputs/`)**
+     - Save plots in `outputs/figures/`.
+     - Save reports/tables in `outputs/reports/`.
+     - Save trained models in `outputs/models/`.
+
+### Contamination Prevention Checklist
+
+- Never write scripts that save into `data/raw/`.
+- Avoid mixing outputs with input datasets.
+- Keep dependency direction forward only: raw → processed → outputs.
+- Preserve naming consistency so file purpose is obvious.
 
 ---
 
