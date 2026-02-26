@@ -95,6 +95,31 @@ The dataset includes:
 
 ---
 
+## 📁 Project Structure
+
+The project follows industry-standard Data Science organization:
+
+```
+TourMetrics/
+├── data/                    # All datasets
+│   ├── raw/                # Original, unmodified data
+│   └── processed/          # Cleaned and transformed data
+├── notebooks/              # Jupyter notebooks for analysis
+├── src/                    # Reusable Python scripts
+├── models/                 # Trained ML models
+├── outputs/                # Generated visualizations and results
+├── reports/                # Final reports and presentations
+└── myenv/                  # Python virtual environment
+```
+
+**Key Principles:**
+- Raw data stays untouched in `data/raw/`
+- Processed data goes to `data/processed/`
+- Notebooks for exploration, scripts for production
+- Models and outputs are organized separately
+
+---
+
 ## 🤖 Machine Learning Approach  
 
 TourMetrics uses **Linear Regression** for forecasting visitor growth.
