@@ -205,6 +205,59 @@ The script prints:
 
 ---
 
+## ✅ Milestone: Understanding Python Numeric and String Data Types
+
+This milestone strengthens Python fundamentals for reliable data processing.
+
+### Script Added
+
+- `scripts/python_data_types_demo.py`
+
+### What It Demonstrates
+
+1. **Numeric types (`int`, `float`)**
+     - Basic arithmetic
+     - Division behavior (`/` vs `//`)
+     - Floating-point precision note (`0.1 + 0.2`)
+
+2. **String type (`str`)**
+     - String creation and concatenation
+     - Simple string operations (`upper()`, indexing)
+
+3. **Mixing numbers and strings safely**
+     - Captured `TypeError` for invalid mixing
+     - Safe conversion using `str()` and `int()`
+     - Captured `ValueError` for invalid numeric text
+
+4. **Type inspection**
+     - Checking runtime types with `type()`
+     - Simple validation using `isinstance()`
+
+### How to Run
+
+From project root:
+
+```bash
+python scripts/python_data_types_demo.py
+```
+
+Windows virtual environment direct command:
+
+```bash
+C:/Users/SUPRIYA/OneDrive/Desktop/celestials/.venv/Scripts/python.exe scripts/python_data_types_demo.py
+```
+
+### Learning Outcome
+
+After running the script, you should be able to:
+
+- Differentiate numeric and string values confidently
+- Perform arithmetic and text operations correctly
+- Avoid common type-mixing errors
+- Inspect and validate data types during execution
+
+---
+
 ## 🤖 Machine Learning Approach  
 
 TourMetrics uses **Linear Regression** for forecasting visitor growth.
