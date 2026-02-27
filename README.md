@@ -151,6 +151,60 @@ This repository now enforces clear data-stage separation to support reproducibil
 
 ---
 
+## ✅ Milestone: Creating and Running a First Python Script for Data Analysis
+
+This milestone introduces script-based execution outside Jupyter notebooks.
+
+### Script Added
+
+- `scripts/first_data_analysis.py`
+
+What this script demonstrates:
+
+- Defining variables and simple calculations
+- Working with small sample data (monthly visitors)
+- Printing outputs to the terminal
+- Clear top-to-bottom execution flow in a standalone `.py` file
+
+### How to Run
+
+From project root:
+
+```bash
+python scripts/first_data_analysis.py
+```
+
+If using the project virtual environment directly on Windows:
+
+```bash
+C:/Users/SUPRIYA/OneDrive/Desktop/celestials/.venv/Scripts/python.exe scripts/first_data_analysis.py
+```
+
+### Expected Output (Summary)
+
+The script prints:
+
+- Input monthly visitor data (Jan to Jun)
+- Total visitors
+- Average monthly visitors
+- Highest and lowest monthly visitors
+- Growth from January to June
+
+### Script vs Notebook (Quick Understanding)
+
+- Use notebooks for exploration, quick experiments, and visual storytelling.
+- Use scripts for repeatable execution, automation, and sharing workflows.
+- Scripts do not retain interactive state between runs, which improves reproducibility.
+
+### 2-Minute Video Walkthrough Checklist
+
+1. Open `scripts/first_data_analysis.py` in the editor.
+2. Run the script in terminal.
+3. Show and explain the printed output.
+4. Briefly explain why scripts are useful alongside notebooks.
+
+---
+
 ## 🤖 Machine Learning Approach  
 
 TourMetrics uses **Linear Regression** for forecasting visitor growth.
