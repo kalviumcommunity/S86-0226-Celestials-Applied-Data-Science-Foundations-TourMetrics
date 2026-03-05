@@ -1136,3 +1136,111 @@ This section is optional, and learners who want to explore the topics covered so
 5. Practical examples combining Markdown and Code cells
 6. Best practices summary
 7. Conclusion with video demonstration checklist
+
+---
+
+## ✅ Milestone: Applying Vectorized Operations Instead of Python Loops
+
+This milestone focuses on replacing loop-heavy numerical logic with NumPy vectorized expressions.
+
+### Script Added
+
+- `scripts/vectorized_operations_milestone.py`
+
+### What It Demonstrates
+
+1. **Loop-based vs vectorized transformation**
+     - Same math written with a Python loop and with NumPy vectorization
+     - Equality check to confirm identical output
+     - Lightweight timing comparison to show performance difference
+
+2. **Vectorized arithmetic operations**
+     - Scalar-to-array math
+     - Array-to-array element-wise math
+     - Concise numerical expressions without explicit iteration
+
+3. **Vectorized comparisons and conditions**
+     - Boolean masks from comparisons
+     - Filtering values using masks
+     - Conditional labeling with `np.where`
+
+4. **Common mistakes and safe usage**
+     - Shape mismatch example with clear error output
+     - Valid broadcasting example for compatible shapes
+     - Practical readability-first guidelines
+
+### How to Run
+
+From project root:
+
+```bash
+python scripts/vectorized_operations_milestone.py
+```
+
+Windows virtual environment direct command:
+
+```bash
+C:/Users/SUPRIYA/OneDrive/Desktop/celestials/.venv/Scripts/python.exe scripts/vectorized_operations_milestone.py
+```
+
+### Learning Outcome
+
+After completing this script, you should be able to:
+
+- Identify loop-based NumPy code that can be vectorized
+- Apply arithmetic and comparison logic to whole arrays
+- Improve readability and performance for numerical tasks
+- Avoid common shape-related mistakes
+
+---
+
+## ✅ Milestone: Understanding NumPy Broadcasting with Simple Examples
+
+This milestone builds intuition for how NumPy operates on arrays of different shapes without manual loops.
+
+### Script Added
+
+- `scripts/numpy_broadcasting_milestone.py`
+
+### What It Demonstrates
+
+1. **Broadcasting with scalars**
+     - Scalar applied across every array element
+     - Conceptual loop-equivalent result for intuition
+
+2. **Broadcasting between 1D arrays**
+     - Compatible case where shape `(1,)` expands to match `(n,)`
+     - Incompatible case with expected `ValueError`
+
+3. **Broadcasting between 2D and 1D arrays**
+     - Row-wise behavior with shape `(rows, cols)` + `(cols,)`
+     - Column-wise behavior using reshape to `(rows, 1)`
+     - Output-shape checks to build prediction skills
+
+4. **Conceptual broadcasting rules**
+     - Compare dimensions from the rightmost side
+     - Dimensions are compatible when equal or one is `1`
+     - Quick shape reasoning examples for debugging
+
+### How to Run
+
+From project root:
+
+```bash
+python scripts/numpy_broadcasting_milestone.py
+```
+
+Windows virtual environment direct command:
+
+```bash
+C:/Users/SUPRIYA/OneDrive/Desktop/celestials/.venv/Scripts/python.exe scripts/numpy_broadcasting_milestone.py
+```
+
+### Learning Outcome
+
+After completing this script, you should be able to:
+
+- Explain why a broadcasted operation works (or fails)
+- Predict output shapes before running operations
+- Combine 1D and 2D arrays safely and clearly
+- Debug shape mismatch errors with confidence
