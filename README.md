@@ -101,22 +101,29 @@ The project follows industry-standard Data Science organization:
 
 ```
 TourMetrics/
-├── data/                     # Input datasets (staged)
-│   ├── raw/                  # Original, unmodified source files
-│   └── processed/            # Cleaned/transformed datasets
-├── notebooks/                # Jupyter notebooks for analysis
-├── outputs/                  # Derived project artifacts
-│   ├── figures/              # Charts and visual outputs
-│   ├── reports/              # Exported summaries/documents
-│   └── models/               # Trained model artifacts
-├── TourMetrics.ipynb         # Main project notebook
-└── README.md                 # Project and workflow documentation
+├── data/
+│   ├── raw/                    # Original, unmodified datasets
+│   └── processed/              # Cleaned and transformed data
+├── notebooks/                  # Jupyter notebooks for EDA
+│   ├── test.ipynb
+│   └── TourMetrics.ipynb
+├── scripts/                    # Python scripts for automation
+│   ├── first_data_analysis.py
+│   └── python_data_types_demo.py
+├── src/                        # Source code modules
+├── models/                     # Trained ML models
+├── outputs/
+│   └── visualizations/         # Generated plots and charts
+├── reports/                    # Final reports and presentations
+└── myenv/                      # Python virtual environment
 ```
 
 **Key Principles:**
 - Raw data stays untouched in `data/raw/`
 - Processed data goes to `data/processed/`
-- Outputs (figures/reports/models) stay in `outputs/`
+- Notebooks for exploration in `notebooks/`
+- Scripts for automation in `scripts/`
+- Visualizations in `outputs/visualizations/`
 - Data flow is one-directional: raw → processed → outputs
 
 ---
@@ -137,10 +144,16 @@ This repository now enforces clear data-stage separation to support reproducibil
      - Use stage-specific, descriptive filenames.
      - Ensure processed files can be recreated from raw inputs.
 
-3. **Output artifacts (`outputs/`)**
-     - Save plots in `outputs/figures/`.
-     - Save reports/tables in `outputs/reports/`.
-     - Save trained models in `outputs/models/`.
+3. **Output artifacts (`outputs/visualizations/`)**
+     - Save plots and charts in `outputs/visualizations/`.
+     - Keep generated files separate from source data.
+
+4. **Models (`models/`)**
+     - Save trained models in dedicated `models/` folder.
+     - Use version numbers or dates in filenames.
+
+5. **Reports (`reports/`)**
+     - Final deliverables and presentations go here.
 
 ### Contamination Prevention Checklist
 
@@ -1137,110 +1150,227 @@ This section is optional, and learners who want to explore the topics covered so
 6. Best practices summary
 7. Conclusion with video demonstration checklist
 
----
-
-## ✅ Milestone: Applying Vectorized Operations Instead of Python Loops
-
-This milestone focuses on replacing loop-heavy numerical logic with NumPy vectorized expressions.
-
-### Script Added
-
-- `scripts/vectorized_operations_milestone.py`
-
-### What It Demonstrates
-
-1. **Loop-based vs vectorized transformation**
-     - Same math written with a Python loop and with NumPy vectorization
-     - Equality check to confirm identical output
-     - Lightweight timing comparison to show performance difference
-
-2. **Vectorized arithmetic operations**
-     - Scalar-to-array math
-     - Array-to-array element-wise math
-     - Concise numerical expressions without explicit iteration
-
-3. **Vectorized comparisons and conditions**
-     - Boolean masks from comparisons
-     - Filtering values using masks
-     - Conditional labeling with `np.where`
-
-4. **Common mistakes and safe usage**
-     - Shape mismatch example with clear error output
-     - Valid broadcasting example for compatible shapes
-     - Practical readability-first guidelines
-
-### How to Run
-
-From project root:
-
-```bash
-python scripts/vectorized_operations_milestone.py
-```
-
-Windows virtual environment direct command:
-
-```bash
-C:/Users/SUPRIYA/OneDrive/Desktop/celestials/.venv/Scripts/python.exe scripts/vectorized_operations_milestone.py
-```
-
-### Learning Outcome
-
-After completing this script, you should be able to:
-
-- Identify loop-based NumPy code that can be vectorized
-- Apply arithmetic and comparison logic to whole arrays
-- Improve readability and performance for numerical tasks
-- Avoid common shape-related mistakes
 
 ---
 
-## ✅ Milestone: Understanding NumPy Broadcasting with Simple Examples
+## 🎓 Learning Milestone: Creating and Inspecting Pandas DataFrames
 
-This milestone builds intuition for how NumPy operates on arrays of different shapes without manual loops.
+This milestone focuses on creating Pandas DataFrames from dictionaries and files, which is a core skill for working with real-world data. DataFrames are the primary structure used in Pandas to represent tabular data similar to spreadsheets or database tables.
 
-### Script Added
+Learning how to construct DataFrames from common sources prepares you for practical data analysis tasks.
 
-- `scripts/numpy_broadcasting_milestone.py`
+### 📚 Learning Objectives
 
-### What It Demonstrates
+This lesson is to help you:
 
-1. **Broadcasting with scalars**
-     - Scalar applied across every array element
-     - Conceptual loop-equivalent result for intuition
+- Understand what a Pandas DataFrame represents
+- Create DataFrames from Python dictionaries
+- Load DataFrames from common file formats
+- Inspect DataFrame structure and contents
+- Recognize common issues during data loading
 
-2. **Broadcasting between 1D arrays**
-     - Compatible case where shape `(1,)` expands to match `(n,)`
-     - Incompatible case with expected `ValueError`
+By completing this milestone, you will be able to:
 
-3. **Broadcasting between 2D and 1D arrays**
-     - Row-wise behavior with shape `(rows, cols)` + `(cols,)`
-     - Column-wise behavior using reshape to `(rows, 1)`
-     - Output-shape checks to build prediction skills
+- Create DataFrames programmatically from dictionaries
+- Load tabular data from files into Pandas
+- Inspect rows, columns, and data types
+- Understand how data is organized in a DataFrame
+- Prepare data for cleaning and analysis
 
-4. **Conceptual broadcasting rules**
-     - Compare dimensions from the rightmost side
-     - Dimensions are compatible when equal or one is `1`
-     - Quick shape reasoning examples for debugging
+### 🎯 Why This Matters
 
-### How to Run
+Common beginner issues include:
 
-From project root:
+- Difficulty loading external data into Python
+- Confusion between Series and DataFrames
+- Incorrect assumptions about data shape
+- Errors caused by unexpected file formats
 
-```bash
-python scripts/numpy_broadcasting_milestone.py
+Most real Data Science work begins with loading data correctly.
+
+This milestone ensures that:
+
+- You can bring external data into Python confidently
+- Your data is structured correctly from the start
+- You understand tabular data representation
+- Downstream analysis becomes smoother
+
+**Think of DataFrames as the working table for all analysis.**
+
+### 📋 What You Are Expected to Do
+
+This is a **Pandas fundamentals milestone**, not a data analysis task.
+
+You are expected to:
+
+- Import Pandas correctly
+- Create a DataFrame from a dictionary
+- Load a DataFrame from a file
+- Inspect DataFrame structure and contents
+
+**No advanced cleaning or analysis is required.**
+
+### 1️⃣ Understanding Pandas DataFrames
+
+Learn what a DataFrame represents.
+
+You should:
+
+- Understand rows and columns
+- Recognize column names and indexes
+- Compare DataFrames to spreadsheets
+- Relate DataFrames to real-world tables
+
+**This builds the mental model for tabular data.**
+
+### 2️⃣ Creating DataFrames from Dictionaries
+
+Create structured data programmatically.
+
+You should:
+
+- Create a dictionary with column-style data
+- Convert the dictionary into a DataFrame
+- Inspect column names and values
+- Use small, clear examples
+
+**Dictionaries are a common starting point.**
+
+**Example:**
+```python
+import pandas as pd
+
+student_data = {
+    'Name': ['Alice', 'Bob', 'Charlie'],
+    'Age': [23, 25, 22],
+    'Grade': ['A', 'B', 'A']
+}
+
+df = pd.DataFrame(student_data)
+print(df)
 ```
 
-Windows virtual environment direct command:
+### 3️⃣ Creating DataFrames from Files
 
-```bash
-C:/Users/SUPRIYA/OneDrive/Desktop/celestials/.venv/Scripts/python.exe scripts/numpy_broadcasting_milestone.py
+Load data from external sources.
+
+You should:
+
+- Load a DataFrame from a CSV or similar file
+- Understand how headers and rows are interpreted
+- Inspect the loaded data
+- Recognize common file-loading parameters conceptually
+
+**File-based data is the most common real-world input.**
+
+**Example:**
+```python
+df_employees = pd.read_csv('data/raw/employees.csv')
+print(df_employees.head())
 ```
 
-### Learning Outcome
+### 4️⃣ Inspecting DataFrame Structure
 
-After completing this script, you should be able to:
+Understand what was loaded.
 
-- Explain why a broadcasted operation works (or fails)
-- Predict output shapes before running operations
-- Combine 1D and 2D arrays safely and clearly
-- Debug shape mismatch errors with confidence
+You should:
+
+- View the first few rows
+- Inspect column names
+- Check basic shape and size
+- Understand data types at a high level
+
+**Inspection prevents silent errors.**
+
+**Key Methods:**
+```python
+df.head()        # First 5 rows
+df.tail()        # Last 5 rows
+df.shape         # (rows, columns)
+df.columns       # Column names
+df.dtypes        # Data types
+df.info()        # Comprehensive overview
+df.describe()    # Basic statistics
+```
+
+### 5️⃣ Video Walkthrough (~2 Minutes)
+
+Record a short screen-capture video demonstrating DataFrame creation.
+
+Your video must include:
+
+- Creating a DataFrame from a dictionary
+- Loading a DataFrame from a file
+- Inspecting rows and columns
+- Explaining why DataFrames are useful
+
+### 📤 Submission Guidelines
+
+- Submit your work as a Pull Request (if required)
+- Submit the video link as instructed
+- Video should be approximately 2 minutes
+- Video must be screen-facing and clearly visible
+
+### ⚠️ Important Notes
+
+- Focus on structure, not analysis
+- Use small and readable datasets
+- Always inspect data after loading
+- DataFrames are central to Pandas workflows
+
+**Pandas DataFrames are the backbone of data analysis in Python.** This milestone ensures you can create and load DataFrames confidently from common data sources.
+
+### 📁 Files Created for This Milestone
+
+**Scripts:**
+- `scripts/pandas_dataframe_fundamentals.py` - Complete Python script with examples
+
+**Notebooks:**
+- `notebooks/pandas_dataframe_fundamentals.ipynb` - Interactive Jupyter notebook
+
+**Documentation:**
+- `reports/pandas_dataframe_quick_reference.md` - Quick reference guide
+- `reports/pandas_dataframe_video_guide.md` - Video recording instructions
+- `reports/dataframe_milestone_checklist.md` - Completion checklist
+
+**Sample Data:**
+- `data/raw/employees.csv` - Sample employee data
+- `data/raw/books.csv` - Sample books data
+
+### 🚀 How to Run
+
+**Python Script:**
+```bash
+python scripts/pandas_dataframe_fundamentals.py
+```
+
+**Jupyter Notebook:**
+```bash
+jupyter notebook notebooks/pandas_dataframe_fundamentals.ipynb
+```
+
+### 🎁 Bonus Content
+
+This section is optional, and learners who want to explore the topics covered so far can utilize the materials provided below.
+
+**Resources:**
+
+- [Pandas DataFrame Documentation](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html)
+- [Reading CSV Files with Pandas](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html)
+- [Intro to Pandas DataFrames](https://www.datacamp.com/tutorial/pandas-tutorial-dataframe-python)
+
+### ✅ Milestone Completion Status
+
+- ✅ Python script created with comprehensive examples
+- ✅ Jupyter notebook created with interactive cells
+- ✅ Quick reference guide documented
+- ✅ Video recording guide provided
+- ✅ Completion checklist created
+- ✅ Sample CSV files generated
+- ✅ Dictionary to DataFrame examples included
+- ✅ File loading examples included
+- ✅ Inspection methods demonstrated
+- ✅ Best practices documented
+
+**This milestone provides a complete foundation for working with Pandas DataFrames in the TourMetrics project.**
+
