@@ -1,0 +1,15 @@
+ProductID,ProductName,Category,Price,Stock
+101,Laptop,Electronics,899.99,15
+102,Mouse,Electronics,24.99,50
+103,Keyboard,Electronics,79.99,30
+101,Laptop,Electronics,899.99,15
+104,Monitor,Electronics,299.99,20
+105,Desk Chair,Furniture,199.99,12
+102,Mouse,Electronics,24.99,50
+106,Notebook,Stationery,4.99,100
+107,Pen Set,Stationery,12.99,75
+105,Desk Chair,Furniture,199.99,12
+108,USB Cable,Electronics,9.99,200
+109,Headphones,Electronics,149.99,25
+110,Webcam,Electronics,89.99,18
+102,Mouse,Electronics,24.99,50
