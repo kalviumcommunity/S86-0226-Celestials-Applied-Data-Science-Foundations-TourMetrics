@@ -1374,3 +1374,88 @@ This section is optional, and learners who want to explore the topics covered so
 
 **This milestone provides a complete foundation for working with Pandas DataFrames in the TourMetrics project.**
 
+
+
+---
+
+## ✅ Milestone: Time-Series Trend Visualization
+
+This milestone focuses on identifying trends over time using line plots. Line plots are one of the most effective ways to analyze time-based data, helping you observe patterns, trends, and changes across a continuous timeline.
+
+### 📚 Learning Objectives
+
+- Understand what time-series data represents
+- Visualize data changes over time using line plots
+- Identify upward, downward, or stable trends
+- Interpret patterns such as spikes or drops
+- Build intuition for temporal analysis
+
+### 📁 Files Created
+
+**Python Script:** `scripts/time_series_trend_visualization_milestone.py`
+- Complete TimeSeriesVisualizer class
+- Data loading, parsing, and validation
+- Line plot creation with proper formatting
+- Trend identification using linear regression
+- Anomaly detection using z-score method
+
+**Jupyter Notebook:** `notebooks/time_series_trend_visualization_milestone.ipynb`
+- Interactive step-by-step tutorial
+- 10 sections covering all concepts
+- Multiple visualization examples
+- Practice exercises
+
+**Documentation:**
+- Main Report: `reports/time_series_trend_visualization_milestone.md`
+- Quick Reference: `reports/time_series_trend_visualization_quick_reference.md`
+- Video Script: `reports/time_series_trend_visualization_video_script.md`
+
+### 🚀 How to Run
+
+```bash
+# Run the Python script
+python scripts/time_series_trend_visualization_milestone.py
+
+# Or open the Jupyter notebook
+jupyter notebook notebooks/time_series_trend_visualization_milestone.ipynb
+```
+
+### 📊 What You'll Learn
+
+1. **Understanding Time-Based Data**
+   - Identify temporal columns
+   - Parse dates correctly
+   - Sort data chronologically
+
+2. **Creating Line Plots**
+   - Basic line plot creation
+   - Proper axis labeling
+   - Grid lines and formatting
+
+3. **Identifying Trends**
+   - Calculate trend direction
+   - Measure percent change
+   - Add trend lines to plots
+
+4. **Detecting Anomalies**
+   - Use z-score method
+   - Highlight unusual patterns
+   - Interpret spikes and drops
+
+### ✅ Key Takeaways
+
+- Time-series data must be sorted chronologically
+- Line plots show continuity and trends over time
+- Trends can be upward, downward, or stable
+- Anomalies are detected using statistical methods
+- Visualization helps identify patterns and changes
+
+### 📝 Next Steps
+
+1. Run the demonstration script
+2. Open and explore the Jupyter notebook
+3. Review the quick reference guide
+4. Record your video walkthrough using the provided script
+5. Practice with your own time-series data
+
+**Status:** ✅ COMPLETED
